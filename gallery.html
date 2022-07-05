@@ -1,0 +1,483 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+</style>
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<html>
+<head>
+<title>Gallery</title>
+</head>
+<body bgcolor="#FFA07A">
+</body>
+</html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #FF7F50;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><font face="britannic" size="70">Photography</font></h1>
+</div>
+
+</body>
+</html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FF7F50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" "#home">Home Page</a>
+  <a href="biodata.html" "#biodata">Biodata</a>
+  <a href="experience.html" "#experience">Experience</a>
+  <a href="education.html" "#education">Education</a>
+  <a href="family.html" "#family">Family</a>
+  <a href="gallery.html" "#gallery" class="active">Gallery</a>
+  <a href="songs.html" "#songs">Songs</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<br>
+<br>
+<html>
+<body>
+<audio controls autoplay loop>
+<source src="audio/audio7.mp3" type="audio/mpeg">
+</audio>
+<br>
+<br>
+<button type="button" 
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<p id="demo"></p>
+</body>
+<br>
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+img {
+  float: left;
+}
+</style>
+</head>
+<body>
+
+<p><img src="image/me2.jpg" alt="Me2" style="width:170px;height:170px;margin-right:15px;">
+<b><i>Photography Quote</i></b>
+<br>
+<pre>If you
+want to learn
+what someone    fear losing,
+
+Watch
+what they    photograph.
+</pre></p>
+
+</body>
+</html>
+<br>
+<br>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>MY GALLERY &#128248</h1>
+<hr>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('family')"> Family</button>
+  <button class="btn" onclick="filterSelection('friends')"> Friends</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="image/sky1.jpg" alt="Sky1" style="width:100%">
+      <h4><i>Purple Sky</i></h4>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="image/sky2.jpg" alt="Sky2" style="width:100%">
+      <h4><i>Sunset</i></h4>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="image/sky3.jpg" alt="Sky3" style="width:100%">
+      <h4><i>Cirrocumulus Clouds</i></h4>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="image/sky4.jpg" alt="Sky4" style="width:100%">
+      <h4><i>Cumulus Clouds</i></h4>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="image/sky5.jpg" alt="Sky5" style="width:100%">
+      <h4><i>Beach Sunset</i></h4>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="image/sky6.jpg" alt="Sky6" style="width:100%">
+      <h4><i>Sunset over Lake</i></h4>
+    </div>
+  </div>
+  
+  <div class="column family">
+    <div class="content">
+      <img src="image/abahmak.jpg" alt="Abahmak" style="width:100%">
+      <h4><i>Father & Mother</i></h4>
+    </div>
+  </div>
+  <div class="column family">
+    <div class="content">
+    <img src="image/apitsally.jpg" alt="Apitsally" style="width:100%">
+      <h4><i>Brother & Sister in law</i></h4>
+    </div>
+  </div>
+  <div class="column family">
+    <div class="content">
+    <img src="image/wanienazri.jpg" alt="Wanienazri" style="width:100%">
+      <h4><i>Sister & Brother in law</i></h4>
+    </div>
+  </div>
+  <div class="column family">
+    <div class="content">
+    <img src="image/ikaa.jpg" alt="Ikaa" style="width:100%">
+      <h4><i>Sis Ika & Me</i></h4>
+    </div>
+  </div>
+  <div class="column family">
+    <div class="content">
+    <img src="image/danial.jpg" alt="Danial" style="width:100%">
+      <h4><i>Danial My Nephew</i></h4>
+    </div>
+  </div>
+  <div class="column family">
+    <div class="content">
+    <img src="image/zayyad.jpg" alt="Zayyad" style="width:100%">
+      <h4><i>Zayyad My Nephew</i></h4>
+    </div>
+  </div>
+  <div class="column family">
+    <div class="content">
+    <img src="image/tasneem.jpg" alt="Tasneem" style="width:100%">
+      <h4><i>Tasneem My Niece</i></h4>
+    </div>
+  </div>
+
+  <div class="column friends">
+    <div class="content">
+      <img src="image/f1.jpg" alt="F1" style="width:100%">
+      <h4><i>Primary School Friends</i></h4>
+    </div>
+  </div>
+  <div class="column friends">
+    <div class="content">
+    <img src="image/f2.jpg" alt="F2" style="width:100%">
+      <h4><i>High School Friends</i></h4>
+    </div>
+  </div>
+  <div class="column friends">
+    <div class="content">
+    <img src="image/f3.jpg" alt="F3" style="width:100%">
+      <h4><i>Bff Hiking</i></h4>
+    </div>
+  </div>
+    <div class="column friends">
+    <div class="content">
+    <img src="image/f4.jpg" alt="F4" style="width:100%">
+      <h4><i>Bestie Zira</i></h4>
+    </div>
+  </div>
+    <div class="column friends">
+    <div class="content">
+    <img src="image/f5.jpg" alt="F5" style="width:100%">
+      <h4><i>Bestie Farah</i></h4>
+    </div>
+  </div>
+    <div class="column friends">
+    <div class="content">
+    <img src="image/f6.jpg" alt="F6" style="width:100%">
+      <h4><i>Bestie Fira</i></h4>
+    </div>
+  </div>
+    <div class="column friends">
+    <div class="content">
+    <img src="image/f7.jpg" alt="F7" style="width:100%">
+      <h4><i>Girls Night Out</i></h4>
+    </div>
+  </div>
+    <div class="column friends">
+    <div class="content">
+    <img src="image/f8.jpg" alt="F8" style="width:100%">
+      <h4><i>My Housemate</i></h4>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
+
+
+<br>
+<br>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
